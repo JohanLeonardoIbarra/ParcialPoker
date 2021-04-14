@@ -12,7 +12,7 @@ for (let index = 1; index < 14; index++) {
 
 
 function guardarDatos() {
-    fetch("../Data/data.json")
+    fetch("https://raw.githubusercontent.com/JohanLeonardoIbarra/ParcialPoker/master/Data/data.json")
         .then(response => response.json())
         .then(data => {
             localStorage.setItem("datos", JSON.stringify(data))
